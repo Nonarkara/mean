@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What I Mean When I Say — A small dictionary by Non Arkaraprasertkul</title>
+<meta name="description" content="A personal lexicon by Dr. Non Arkaraprasertkul. One hundred words across three languages, defined the way a particular Thai anthropologist actually means them.">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..600;1,400..600&family=IBM+Plex+Mono:ital,wght@0,300..600;1,300..600&family=Sarabun:wght@300;400;500;600&family=Noto+Serif+Thai:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<!-- ════════ READING PROGRESS BAR ════════ -->
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ════════ STICKY ALPHABET HEADER ════════ -->
+<header class="alphabet-bar" id="abar" aria-label="Alphabet jump">
+  <div class="ab-brand">
+    <span class="ab-brand-mark">なん</span>
+    <span class="ab-brand-text">A small dictionary</span>
+  </div>
+  <nav class="ab-letters" id="letters" aria-label="Jump to letter"></nav>
+  <div class="ab-tools">
+    <button class="ab-btn" id="randomBtn" title="Random entry · press R" aria-label="Random entry">⚂</button>
+    <button class="ab-btn" id="searchBtn" title="Search · press /" aria-label="Search">⌕</button>
+    <button class="ab-btn" id="menuBtn" title="More" aria-label="More">≡</button>
+  </div>
+</header>
+
+<!-- ════════ SEARCH OVERLAY ════════ -->
+<div class="search-overlay" id="searchOverlay" aria-hidden="true">
+  <div class="search-box">
+    <input type="search" id="searchInput" placeholder="Type a word…" autocomplete="off">
+    <button class="search-close" id="searchClose" aria-label="Close">×</button>
+    <ul class="search-results" id="searchResults"></ul>
+    <p class="search-hint">↑ ↓ to walk · ↵ to open · Esc to close</p>
+  </div>
+</div>
+
+<!-- ════════ MENU OVERLAY ════════ -->
+<aside class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <button class="menu-close" id="menuClose" aria-label="Close">×</button>
+  <h3 class="menu-head">A note on this book</h3>
+  <p>This is a small dictionary of words I have used wrong, and a smaller list of words I have used right. There are about one hundred entries in three of my languages and a few imports from elsewhere.</p>
+  <p>You can read it in two ways. <em>From A to Z</em>, in roughly half an hour. Or <em>one entry at a time</em> — one a day, the way the calendar arranges itself anyway.</p>
+  <p>Some entries are jokes. Some are arguments. Most are confessions.</p>
+  <p class="menu-sig">— Non · Bangkok · Shanghai · Boston</p>
+  <div class="menu-stats">
+    <div><span id="entryCount">—</span><small>entries</small></div>
+    <div><span id="visitedCount">—</span><small>read</small></div>
+    <div><span id="streakCount">—</span><small>days</small></div>
+  </div>
+  <div class="other-books">
+    <p class="ob-head">Other books by Non</p>
+    <a class="ob-link" href="https://100days.nonarkara.org" target="_blank" rel="noopener">
+      <span class="ob-name">100 Days of Solitude</span>
+      <span class="ob-tag">An illustrated travelogue</span>
+    </a>
+    <a class="ob-link" href="https://ninja.nonarkara.org" target="_blank" rel="noopener">
+      <span class="ob-name">Ninja Innovation</span>
+      <span class="ob-tag">A people-centric practice for the AI era</span>
+    </a>
+    <a class="ob-link" href="https://slowdown.nonarkara.org" target="_blank" rel="noopener">
+      <span class="ob-name">The Things You Can See Only When You Slow Down</span>
+      <span class="ob-tag">A meditation in ten movements</span>
+    </a>
+  </div>
+</aside>
+<div class="overlay-scrim" id="scrim"></div>
+
+<!-- ════════ COVER ════════ -->
+<section class="cover" id="cover">
+  <p class="cover-meta"><span>Edition One · MMXXVI</span><span>Free to read · print · gift</span></p>
+  <h1 class="cover-title">What I Mean<br><em>When I Say</em></h1>
+  <p class="cover-sub">A small dictionary, by Non Arkaraprasertkul. One hundred words I have used wrong, often, and a smaller list of words I have used right.</p>
+  <p class="cover-instructions">
+    <span><strong>A</strong> jump to letter</span>
+    <span><strong>/</strong> search</span>
+    <span><strong>R</strong> random</span>
+    <span><strong>↓</strong> begin</span>
+  </p>
+  <div class="cover-mark" aria-hidden="true">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="6" y="6" width="88" height="88" fill="none" stroke="currentColor" stroke-width="1"/>
+      <text x="50" y="48" text-anchor="middle" font-family="Sarabun, Noto Serif Thai, serif" font-size="34" fill="currentColor" letter-spacing="-2">นน</text>
+      <text x="50" y="76" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="6.5" letter-spacing="3" fill="currentColor">N · I · 2026</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ════════ WORD OF THE DAY ════════ -->
+<section class="wotd" id="wotd" aria-label="Word of the day">
+  <p class="wotd-kicker">Today's word</p>
+  <div class="wotd-card" id="wotdCard">
+    <!-- populated by JS -->
+  </div>
+  <p class="wotd-foot">A different word every morning. Same one for everyone, in every time zone, until midnight UTC.</p>
+</section>
+
+<!-- ════════ DICTIONARY BODY ════════ -->
+<main class="dictionary" id="dictionary">
+  <!-- populated by JS — entries grouped by letter -->
+</main>
+
+<!-- ════════ COLOPHON ════════ -->
+<footer class="colophon">
+  <div>
+    <h3>Colophon</h3>
+    <p>One hundred entries, written between cities. Set in <em>Ibarra Real Nova</em>, <em>Cormorant Garamond</em>, and <em>IBM Plex Mono</em>. The seal mark is rendered in <em>Sarabun</em>.</p>
+    <p>Text © Non Arkaraprasertkul. The words themselves are anyone's. Print this book. Argue with it. Cross out my definitions and write your own.</p>
+    <p class="colo-sig">⌁ Bangkok · Shanghai · Boston · MMXXVI</p>
+  </div>
+</footer>
+
+<script src="entries.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
